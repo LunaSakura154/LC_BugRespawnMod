@@ -1,0 +1,11 @@
+C:\Users\super\OneDrive\Documenten\GitHub\LC_BugRespawnMod\LethalCompanyTemplate\bin\Debug\netstandard2.1\LC_BugRespawnMod.deps.json
+C:\Users\super\OneDrive\Documenten\GitHub\LC_BugRespawnMod\LethalCompanyTemplate\bin\Debug\netstandard2.1\LC_BugRespawnMod.dll
+C:\Users\super\OneDrive\Documenten\GitHub\LC_BugRespawnMod\LethalCompanyTemplate\bin\Debug\netstandard2.1\LC_BugRespawnMod.pdb
+C:\Users\super\OneDrive\Documenten\GitHub\LC_BugRespawnMod\LethalCompanyTemplate\obj\Debug\netstandard2.1\LethalCompanyTemplate.csproj.AssemblyReference.cache
+C:\Users\super\OneDrive\Documenten\GitHub\LC_BugRespawnMod\LethalCompanyTemplate\obj\Debug\netstandard2.1\PluginInfo.cs
+C:\Users\super\OneDrive\Documenten\GitHub\LC_BugRespawnMod\LethalCompanyTemplate\obj\Debug\netstandard2.1\LethalCompanyTemplate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\super\OneDrive\Documenten\GitHub\LC_BugRespawnMod\LethalCompanyTemplate\obj\Debug\netstandard2.1\LethalCompanyTemplate.AssemblyInfoInputs.cache
+C:\Users\super\OneDrive\Documenten\GitHub\LC_BugRespawnMod\LethalCompanyTemplate\obj\Debug\netstandard2.1\LethalCompanyTemplate.AssemblyInfo.cs
+C:\Users\super\OneDrive\Documenten\GitHub\LC_BugRespawnMod\LethalCompanyTemplate\obj\Debug\netstandard2.1\LethalCompanyTemplate.csproj.CoreCompileInputs.cache
+C:\Users\super\OneDrive\Documenten\GitHub\LC_BugRespawnMod\LethalCompanyTemplate\obj\Debug\netstandard2.1\LC_BugRespawnMod.dll
+C:\Users\super\OneDrive\Documenten\GitHub\LC_BugRespawnMod\LethalCompanyTemplate\obj\Debug\netstandard2.1\LC_BugRespawnMod.pdb

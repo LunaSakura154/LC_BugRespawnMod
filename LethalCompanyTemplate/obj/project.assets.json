@@ -2690,9 +2690,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\super\\OneDrive\\Documenten\\GitHub\\LC_BugRespawnMod\\LethalCompanyTemplate\\LethalCompanyTemplate.csproj",
+      "projectUniqueName": "C:\\Users\\super\\OneDrive\\Documenten\\GitHub\\LC_BugRespawnMod\\LethalCompanyTemplate\\HoarderMod.csproj",
       "projectName": "LC_BugRespawnMod",
-      "projectPath": "C:\\Users\\super\\OneDrive\\Documenten\\GitHub\\LC_BugRespawnMod\\LethalCompanyTemplate\\LethalCompanyTemplate.csproj",
+      "projectPath": "C:\\Users\\super\\OneDrive\\Documenten\\GitHub\\LC_BugRespawnMod\\LethalCompanyTemplate\\HoarderMod.csproj",
       "packagesPath": "C:\\Users\\super\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\super\\OneDrive\\Documenten\\GitHub\\LC_BugRespawnMod\\LethalCompanyTemplate\\obj\\",
       "projectStyle": "PackageReference",

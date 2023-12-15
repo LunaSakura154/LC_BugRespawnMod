@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/rDd4/C5LTFblTsCnKzY2+X8DIyRvjtP7XXHSKMqZVhSvzlvvSMcPhZ2DnJdGhhsxG/2ddNpd7zswEgMb3dXJQ==",
+  "dgSpecHash": "4RbCE7lzU3WSwo3eqkrzknjQRBPRZtie/4r0fynuGax7fvVphGJEiMquZGiO5oI31pDv0LY6e2BMctX0x05GYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\super\\OneDrive\\Documenten\\GitHub\\LC_BugRespawnMod\\LethalCompanyTemplate\\LethalCompanyTemplate.csproj",
+  "projectFilePath": "C:\\Users\\super\\OneDrive\\Documenten\\GitHub\\LC_BugRespawnMod\\LethalCompanyTemplate\\HoarderMod.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\super\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
     "C:\\Users\\super\\.nuget\\packages\\bepinex.baselib\\5.4.20\\bepinex.baselib.5.4.20.nupkg.sha512",

@@ -1,4 +1,4 @@
-namespace LethalCompanyTemplate
+namespace HoarderMod
 {
     public static class PluginInfo
     {

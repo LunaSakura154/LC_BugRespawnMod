@@ -4,5 +4,12 @@ So for the players who are out of line: if a Hoarding Bug gets killed, 5 Hoardin
 
 # [Releases](https://github.com/LunaSakura154/LC_BugRespawnMod/releases/)
 
+## 1.1.0
+- When you kill a Hoarding Bug every Hoarding Bug in the map will get mad at you
+
 ## 1.0.0
-This version currently only includes the basic Hoarding Bug spawning function (who knows if I add more)
+- Spawn 5 Hoarding Bugs on Bug Death
+
+## To-Do
+- Hoarding Bugs going outside
+- Configuration

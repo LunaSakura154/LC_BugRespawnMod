@@ -4,6 +4,7 @@ using LC_API.GameInterfaceAPI;
 using UnityEngine;
 using GameNetcodeStuff;
 using System.Threading.Tasks;
+using System;
 
 namespace HoarderMod
 {
@@ -16,6 +17,7 @@ namespace HoarderMod
         GameObject player;
         SelectableLevel curLevel;
         int hoardIndex = 2;
+        PlayerControllerB[] players;
 
         bool roundActive;
         private void Awake()
@@ -33,6 +35,7 @@ namespace HoarderMod
             curRound = FindObjectOfType<RoundManager>();
             curLevel = curRound.currentLevel;
             player = GameObject.Find("Player");
+            players = FindObjectsOfType<PlayerControllerB>();
 #if DEBUG
             Logger.LogInfo($"{curLevel.PlanetName}");
             var pcb = FindObjectsOfType<PlayerControllerB>();
@@ -74,6 +77,14 @@ namespace HoarderMod
                     {
                         for (int i = 0; i < 5; i++){ curRound.SpawnEnemyOnServer(b.transform.position, 0, hoardIndex); } // Spawns 5 Hoarding Bugs on a dead Hoarding Bug
                         hoardID.Add(b.GetInstanceID()); // Puts dead Hoarding Bug Instance ID in a list so that they dont spawn infinitely
+                        try
+                        {
+                            AngerBugs(b);
+                        }
+                        catch (Exception e)
+                        {
+                            Logger.LogError(e);
+                        }
                     }
                 }
                 await Task.Delay(10); // for some reason it didn't like me using Update
@@ -97,6 +108,29 @@ namespace HoarderMod
             }
             Logger.LogInfo($"{enemy} index not found, probably doesn't spawn in that case but I'm defaulting to 2 (Hoarding Bug Index on most moons)");
             return 2;
+        }
+
+        public void AngerBugs(HoarderBugAI b)
+        {
+            bugs = FindObjectsOfType<HoarderBugAI>();
+
+            PlayerControllerB tMin = null;
+            float minDist = Mathf.Infinity;
+            Vector3 currentPos = b.transform.position;
+            foreach (PlayerControllerB t in players)
+            {
+                float dist = Vector3.Distance(t.transform.position, currentPos);
+                if (dist < minDist)
+                {
+                    tMin = t;
+                    minDist = dist;
+                }
+            }
+            foreach (var h in bugs)
+            {
+                h.angryAtPlayer = tMin;
+                h.angryTimer += 200f;
+            }
         }
 
 #if DEBUG

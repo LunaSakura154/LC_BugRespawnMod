@@ -47,7 +47,7 @@ namespace HoarderMod
 #endif
             hoardIndex = FindEnemyID("Hoarding bug");
             Logger.LogInfo("Round has started, starting checks");
-            BugCheck();
+            try { BugCheck(); } catch (Exception e) { Logger.LogError(e); }
         }
         /// <summary>
         /// Function that is supposed to get called when a round has ended (currently checked by departing)
@@ -77,14 +77,7 @@ namespace HoarderMod
                     {
                         for (int i = 0; i < 5; i++){ curRound.SpawnEnemyOnServer(b.transform.position, 0, hoardIndex); } // Spawns 5 Hoarding Bugs on a dead Hoarding Bug
                         hoardID.Add(b.GetInstanceID()); // Puts dead Hoarding Bug Instance ID in a list so that they dont spawn infinitely
-                        try
-                        {
-                            AngerBugs(b);
-                        }
-                        catch (Exception e)
-                        {
-                            Logger.LogError(e);
-                        }
+                        try { AngerBugs(b); } catch (Exception e) { Logger.LogError(e); }
                     }
                 }
                 await Task.Delay(10); // for some reason it didn't like me using Update
